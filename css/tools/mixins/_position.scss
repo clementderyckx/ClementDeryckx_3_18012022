@@ -1,0 +1,13 @@
+@mixin fWidth($width: 100%){
+  width: $width;
+}
+@mixin flexCenter(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexCenter-lg($height: 100%){
+  @include flexCenter();
+  width: 100%;
+  height: $height;
+}

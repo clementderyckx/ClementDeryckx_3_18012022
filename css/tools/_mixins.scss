@@ -1,5 +1,3 @@
-@mixin titles($fontSize){
-  font-family: $titlesFont;
-  font-size: $fontSize;
-  color: #000;
-}
+@import "./mixins/_position.scss";
+@import "./mixins/_text.scss";
+

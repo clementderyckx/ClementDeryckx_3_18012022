@@ -1,0 +1,18 @@
+@mixin titles($fontFamily : 'Roboto'){
+
+  font-family: $fontFamily, sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+
+@mixin textCenter() {
+  text-align: center;
+}
+
+@mixin centerBlocks($width : 90%, $height:optional){
+  width: $width;
+  margin: 0 auto;
+  @if($height){
+    height: $height;
+  }
+}
