@@ -11,3 +11,11 @@
   width: 100%;
   height: $height;
 }
+
+@mixin centerBlocks($width : 90%, $height:optional){
+  width: $width;
+  margin: 0 auto;
+  @if($height){
+    height: $height;
+  }
+}

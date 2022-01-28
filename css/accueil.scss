@@ -9,11 +9,20 @@ $logoWidth: 45%;
   position: relative;
   top: 0;
   left: 0;
+  @include respFontFrom14();
+  @media screen and(min-width:450px) {
+    height: 120px;
+  }
+  @media screen and(min-width:617px) {
+    height: 150px;
+  }
+
 }
 .header__logo{
   @include flexCenter-lg(65px);
+  height: 60%;
   background-color: #fff;
-  box-shadow: 4px 4px 4px rgba(0,0,0, 0.9);
+  box-shadow: 0px 6px 8px rgba(0,0,0, 0.5);
 }
 .logo--svg{
   width: $logoWidth;
@@ -26,6 +35,12 @@ $logoWidth: 45%;
   @include flexCenter-lg(50px);
   background-color: darken(#FFF, 10%);
 
+  @media screen and(min-width:450px) {
+    height: 60px;
+  }
+  @media screen and(min-width:617px) {
+    height: 80px;
+  }
 }
 
 .location__infos{
@@ -34,8 +49,9 @@ $logoWidth: 45%;
     padding: 10px;
     font-size: 18px;
   }
-  h2{
+  p{
     padding: 10px;
+    
   }
 }
 
@@ -43,6 +59,9 @@ $logoWidth: 45%;
 
 .container{
   @include centerBlocks();
+  @media screen and(min-width:768px){
+    background-color: red;
+  }
 }
 
 .page-title{
@@ -56,30 +75,63 @@ $logoWidth: 45%;
   @include centerBlocks(80%);
   h1{
     padding: 25px;
+    @media screen and(min-width: 433px) {
+      font-size: 24px;
+    }
+    @media screen and(min-width: 467px) {
+      padding: 25px 35px;
+    }
+    @media screen and(min-width: 495px) {
+      font-size: 28px;
+      margin: 0 auto;
+    }
+    @media screen and(min-width:533px) {
+      font-size: 30px;
+    }
+    @media screen and(min-width:593px) {
+      font-size: 32px;
+    }
+    @media screen and(min-width:627px) {
+      font-size: 36px;
+    }
+    @media screen and(min-width:690px) {
+      font-size: 40px;
+    }
+    @media screen and(min-width:755px) {
+      font-size: 40px;
+      padding: 25px 40px;
+    }
   }
 }
 
 .page-title__catch-phrase{
-  @include centerBlocks();
+  @include centerBlocks(80%);
   padding-bottom: 30px;
   font-weight: lighter;
 }
 
-@mixin links($color : #000){
-  text-decoration: none;
-  color: $color;
-}
+
 
 .page-title__cta{
-  // width: 60%;
   @include centerBlocks(60%);
   padding: 15px 10px ;
   border-radius: 30px;
   font-size: 14px;
   background: linear-gradient($secondary-color, 45%, rgba($primary-color, 0.8));
   box-shadow: 0px 3px 8px rgba(0,0,0, 0.3);
+
+  @media screen and(min-width:563px) {
+    padding: 20px 10px ;
+    border-radius: 35px;
+  }
+  @media screen and(min-width:617px) {
+    width: 55%;
+  }
+
   a{
     @include links(#FFF);
+    @include respFontFrom14();
   }
+
 }
 

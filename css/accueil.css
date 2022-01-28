@@ -44,11 +44,50 @@ td, th {
   padding: 0;
 }
 
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 392px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 563px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 617px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 755px) {
+  html {
+    font-size: 26px;
+  }
+}
+
 body {
   height: 100vh;
   width: 100%;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
 }
 
 h1, h2, h3 {
@@ -78,6 +117,54 @@ h3 {
   left: 0;
 }
 
+@media screen and (min-width: 392px) {
+  .header {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .header {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 563px) {
+  .header {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 617px) {
+  .header {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 755px) {
+  .header {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .header {
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 617px) {
+  .header {
+    height: 150px;
+  }
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,9 +177,10 @@ h3 {
           align-items: center;
   width: 100%;
   height: 65px;
+  height: 60%;
   background-color: #fff;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
 }
 
 .logo--svg {
@@ -118,6 +206,18 @@ h3 {
   background-color: #e6e6e6;
 }
 
+@media screen and (min-width: 450px) {
+  .header__location {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 617px) {
+  .header__location {
+    height: 80px;
+  }
+}
+
 .location__infos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,7 +235,7 @@ h3 {
   font-size: 18px;
 }
 
-.location__infos h2 {
+.location__infos p {
   padding: 10px;
 }
 
@@ -143,6 +243,12 @@ h3 {
   width: 90%;
   margin: 0 auto;
   height: optional;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: red;
+  }
 }
 
 .page-title {
@@ -164,8 +270,58 @@ h3 {
   padding: 25px;
 }
 
+@media screen and (min-width: 433px) {
+  .page-title__title h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 467px) {
+  .page-title__title h1 {
+    padding: 25px 35px;
+  }
+}
+
+@media screen and (min-width: 495px) {
+  .page-title__title h1 {
+    font-size: 28px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 533px) {
+  .page-title__title h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 593px) {
+  .page-title__title h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 627px) {
+  .page-title__title h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 690px) {
+  .page-title__title h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 755px) {
+  .page-title__title h1 {
+    font-size: 40px;
+    padding: 25px 40px;
+  }
+}
+
 .page-title__catch-phrase {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   height: optional;
   padding-bottom: 30px;
@@ -185,8 +341,57 @@ h3 {
           box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (min-width: 563px) {
+  .page-title__cta {
+    padding: 20px 10px;
+    border-radius: 35px;
+  }
+}
+
+@media screen and (min-width: 617px) {
+  .page-title__cta {
+    width: 55%;
+  }
+}
+
 .page-title__cta a {
   text-decoration: none;
   color: #FFF;
+}
+
+@media screen and (min-width: 392px) {
+  .page-title__cta a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .page-title__cta a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .page-title__cta a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 563px) {
+  .page-title__cta a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 617px) {
+  .page-title__cta a {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 755px) {
+  .page-title__cta a {
+    font-size: 26px;
+  }
 }
 /*# sourceMappingURL=accueil.css.map */
