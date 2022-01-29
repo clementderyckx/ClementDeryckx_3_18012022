@@ -165,6 +165,21 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .header {
+    height: 100px;
+  }
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,8 +198,39 @@ h3 {
           box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    height: 100%;
+    background-color: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 25px;
+  }
+}
+
 .logo--svg {
   width: 45%;
+}
+
+@media screen and (min-width: 992px) {
+  .logo--svg {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .logo--svg {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .logo--svg {
+    width: 25%;
+  }
 }
 
 .logo--svg svg {
@@ -218,6 +264,18 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header__location {
+    height: 100%;
+    font-size: 16px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 25px;
+    background-color: transparent;
+  }
+}
+
 .location__infos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,12 +301,6 @@ h3 {
   width: 90%;
   margin: 0 auto;
   height: optional;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    background-color: red;
-  }
 }
 
 .page-title {
@@ -315,8 +367,49 @@ h3 {
 
 @media screen and (min-width: 755px) {
   .page-title__title h1 {
-    font-size: 40px;
     padding: 25px 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-title__title h1 {
+    padding: 25px 35px;
+  }
+}
+
+@media screen and (min-width: 986px) {
+  .page-title__title h1 {
+    padding: 25px 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-title__title h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (min-width: 1017px) {
+  .page-title__title h1 {
+    padding: 25px 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-title__title h1 {
+    padding: 25px 170px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .page-title__title h1 {
+    padding: 25px 250px;
+  }
+}
+
+@media screen and (min-width: 1672px) {
+  .page-title__title h1 {
+    padding: 25px 335px;
   }
 }
 
@@ -326,6 +419,49 @@ h3 {
   height: optional;
   padding-bottom: 30px;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 825px) {
+  .page-title__catch-phrase {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .page-title__catch-phrase {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1015px) {
+  .page-title__catch-phrase {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1097px) {
+  .page-title__catch-phrase {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1197px) {
+  .page-title__catch-phrase {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1197px) {
+  .page-title__catch-phrase {
+    font-size: 28px;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1575px) {
+  .page-title__catch-phrase {
+    width: 35%;
+  }
 }
 
 .page-title__cta {
@@ -351,6 +487,72 @@ h3 {
 @media screen and (min-width: 617px) {
   .page-title__cta {
     width: 55%;
+  }
+}
+
+@media screen and (min-width: 682px) {
+  .page-title__cta {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .page-title__cta {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .page-title__cta {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 972px) {
+  .page-title__cta {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1154px) {
+  .page-title__cta {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1254px) {
+  .page-title__cta {
+    width: 27%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .page-title__cta {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .page-title__cta {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .page-title__cta {
+    width: 22%;
+  }
+}
+
+@media screen and (min-width: 1710px) {
+  .page-title__cta {
+    width: 21%;
+  }
+}
+
+@media screen and (min-width: 1780px) {
+  .page-title__cta {
+    width: 20%;
   }
 }
 
@@ -392,6 +594,12 @@ h3 {
 @media screen and (min-width: 755px) {
   .page-title__cta a {
     font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1399) and (min-width: 1399px) {
+  .page-title__cta a {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

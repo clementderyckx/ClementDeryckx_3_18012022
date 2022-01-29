@@ -16,16 +16,44 @@ $logoWidth: 45%;
   @media screen and(min-width:617px) {
     height: 150px;
   }
+  @media screen and(min-width:768px) {
+    display: flex; 
+    height: 80px;
+  }
+  @media screen and(min-width:1550px) {
+    height: 100px;
+  }
 
 }
+
 .header__logo{
   @include flexCenter-lg(65px);
   height: 60%;
   background-color: #fff;
   box-shadow: 0px 6px 8px rgba(0,0,0, 0.5);
+
+  @media screen and(min-width:768px) {
+    height: 100%;
+    background-color: none;
+    box-shadow: none;
+    justify-content: flex-start;
+    padding: 0 25px;
+  }
 }
 .logo--svg{
   width: $logoWidth;
+  @media screen and(min-width:992px) {
+    $logoWidth: 35%;
+    width: $logoWidth;
+  }
+  @media screen and(min-width:1250px) {
+    $logoWidth: 30%;
+    width: $logoWidth;
+  }
+  @media screen and(min-width:1600px) {
+    $logoWidth: 25%;
+    width: $logoWidth;
+  }
   svg{
     width: 100%;
   }
@@ -41,6 +69,14 @@ $logoWidth: 45%;
   @media screen and(min-width:617px) {
     height: 80px;
   }
+  @media screen and(min-width:768px) {
+
+   height: 100%;
+   font-size: 16px;
+   justify-content: flex-end;
+   padding: 0 25px;
+   background-color: transparent; 
+  }
 }
 
 .location__infos{
@@ -55,13 +91,10 @@ $logoWidth: 45%;
   }
 }
 
-// First Section
+// Titres
 
 .container{
   @include centerBlocks();
-  @media screen and(min-width:768px){
-    background-color: red;
-  }
 }
 
 .page-title{
@@ -69,6 +102,7 @@ $logoWidth: 45%;
   @include textCenter();
   padding: 20px 0 55px 0;
   background-color: #f6f6f6;
+  
 }
 
 .page-title__title{
@@ -98,9 +132,31 @@ $logoWidth: 45%;
       font-size: 40px;
     }
     @media screen and(min-width:755px) {
-      font-size: 40px;
       padding: 25px 40px;
     }
+    @media screen and(min-width:768px){
+      padding: 25px 35px;
+    }
+    @media screen and(min-width:986px){
+      padding: 25px 50px;
+    }
+    @media screen and(min-width:992px){
+      font-size: 44px;
+    }
+    @media screen and(min-width:1017px){
+      padding: 25px 80px;
+    }
+    @media screen and(min-width:1200px){
+      padding: 25px 170px;
+    }
+    @media screen and(min-width:1450px){
+      padding: 25px 250px;
+    }
+
+    @media screen and(min-width:1672px){
+      padding: 25px 335px;
+    }
+    
   }
 }
 
@@ -108,6 +164,30 @@ $logoWidth: 45%;
   @include centerBlocks(80%);
   padding-bottom: 30px;
   font-weight: lighter;
+
+  @media screen and(min-width:825px){
+    width: 70%;
+  }
+  @media screen and(min-width:940px){
+    width: 65%;
+  }
+  @media screen and(min-width:1015px){
+    width: 60%;
+  }
+  @media screen and(min-width:1097px){
+    width: 55%;
+  }
+  @media screen and(min-width:1197px){
+    width: 50%;
+  }
+  @media screen and(min-width:1197px){
+    font-size: 28px;
+    width: 45%;
+  }
+  @media screen and(min-width:1575px){
+    width: 35%;
+  }
+
 }
 
 
@@ -127,11 +207,48 @@ $logoWidth: 45%;
   @media screen and(min-width:617px) {
     width: 55%;
   }
+  @media screen and(min-width:682px) {
+    width: 50%;
+  }
+  @media screen and(min-width:820px) {
+    width: 45%;
+  }
+  @media screen and(min-width:860px) {
+    width: 40%;
+  }
+  @media screen and(min-width:972px) {
+    width: 35%;
+  }
+  @media screen and(min-width:1154px) {
+    width: 30%;
+  }
+  @media screen and(min-width:1254px) {
+    width: 27%;
+  }
+  @media screen and(min-width:1400px) {
+    width: 25%;
+  }
+  @media screen and(min-width:1460px) {
+    width: 23%;
+  }
+  @media screen and(min-width:1650px) {
+    width: 22%;
+  }
+  @media screen and(min-width:1710px) {
+    width: 21%;
+  }
+  @media screen and(min-width:1780px) {
+    width: 20%;
+  }
+
 
   a{
     @include links(#FFF);
     @include respFontFrom14();
+
+    @media screen and(min-width: 1399) {
+      @include textBtn();
+    }
   }
 
 }
-
