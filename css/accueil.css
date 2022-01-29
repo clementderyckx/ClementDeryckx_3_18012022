@@ -597,9 +597,9 @@ h3 {
   }
 }
 
-@media screen and (min-width: 1399) and (min-width: 1399px) {
+@media screen and (min-width: 1399) and (min-width: 755px) {
   .page-title__cta a {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

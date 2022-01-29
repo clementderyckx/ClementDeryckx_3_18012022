@@ -10,6 +10,7 @@
         "tools/_mixins.scss",
         "tools/mixins/_position.scss",
         "tools/mixins/_text.scss",
+        "tools/mixins/_medias-accueil.scss",
         "tools/_functions.scss"
     ],
     "names": [],

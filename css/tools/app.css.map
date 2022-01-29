@@ -9,6 +9,7 @@
         "_mixins.scss",
         "mixins/_position.scss",
         "mixins/_text.scss",
+        "mixins/_medias-accueil.scss",
         "_functions.scss"
     ],
     "names": [],
