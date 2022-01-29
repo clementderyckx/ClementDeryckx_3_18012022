@@ -152,7 +152,7 @@
 @mixin headerLogoMedias(){
     @media screen and(min-width:768px) {
         height: 100%;
-        background-color: none;
+        background-color: transparent;
         box-shadow: none;
         justify-content: flex-start;
         padding: 0 25px;
