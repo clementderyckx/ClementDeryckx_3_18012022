@@ -397,6 +397,10 @@ h3 {
   background: linear-gradient(#FF79DA, 45%, rgba(147, 86, 220, 0.8));
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
 }
+.page-title__cta:hover {
+  background: linear-gradient(#ff83dd, 45%, rgba(152, 94, 222, 0.8));
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
 @media screen and (min-width: 563px) {
   .page-title__cta {
     padding: 20px 10px;
@@ -504,7 +508,7 @@ h3 {
 }
 
 .fonctionnement {
-  padding: 25px 0;
+  padding: 25px 0 35px 0;
 }
 
 .section-title {
@@ -546,24 +550,12 @@ h3 {
 
 .action-list {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .action-list__item {
-  width: 100%;
-  padding: 30px 0;
-  border-radius: 30px;
-  background-color: #f6f6f6;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  margin-bottom: 25px;
-}
-.action-list__item:hover {
-  background-color: #f5edff;
-}
-.action-list__item:hover a > div > i {
-  color: #9356DC;
-}
-
-.action-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -571,67 +563,148 @@ h3 {
   height: 100%;
   text-decoration: none;
   color: #000;
+  width: 95%;
   position: relative;
   height: 100%;
+  padding: 30px 0;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
 }
-.action-list__link .link-id {
+.action-list__item:hover {
+  background-color: #f5edff;
+}
+.action-list__item:hover div > i {
+  color: #9356DC;
+}
+
+.list-id {
   position: absolute;
   left: 0;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #9356DC;
   color: white;
 }
-.action-list__link .link-content {
-  width: 70%;
+
+.list-content {
+  width: 75%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-weight: 500;
 }
-.action-list__link .link-content i {
+.list-content i {
   font-size: 18px;
   padding: 0px 15px;
   color: #7e7e7e;
 }
-.action-list__link .link-content p {
+.list-content p {
   padding: 0px 15px;
 }
 @media screen and (min-width: 392px) {
-  .action-list__link .link-content p {
+  .list-content p {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 450px) {
-  .action-list__link .link-content p {
+  .list-content p {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 500px) {
-  .action-list__link .link-content p {
+  .list-content p {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 563px) {
-  .action-list__link .link-content p {
+  .list-content p {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 617px) {
-  .action-list__link .link-content p {
+  .list-content p {
     font-size: 24px;
   }
 }
 @media screen and (min-width: 755px) {
-  .action-list__link .link-content p {
+  .list-content p {
     font-size: 26px;
   }
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+
+.restaurants-gridList {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 255px);
+  grid-row-gap: 20px;
+}
+
+.restaurant-item {
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant__image {
+  height: 175px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.restaurant__badge {
+  height: 30px;
+  padding: 0 15px;
+  border-radius: 3px;
+  background-color: #99E2D0;
+  position: relative;
+  top: 15px;
+  right: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant__badge span {
+  color: #278870;
+  font-weight: 500;
+}
+
+.restaurant__content {
+  position: relative;
+  width: 100%;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: lighter;
+}
+.restaurant__content h3 {
+  padding-bottom: 5px;
+}
+
+.restaurant__item-icon i {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=accueil.css.map */

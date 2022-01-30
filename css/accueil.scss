@@ -91,6 +91,12 @@ $logoWidth: 45%;
   background: linear-gradient($secondary-color, 45%, rgba($primary-color, 0.8));
   box-shadow: 0px 3px 8px rgba(0,0,0, 0.3);
 
+  &:hover{
+    background: linear-gradient(lighten($secondary-color, 2%), 45%, lighten(rgba($primary-color, 0.8),2%) );
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.4);
+    //transition: all 0.3s ease-in-out;
+  }
+
   @include ctaMedias();
 
   a{
@@ -108,7 +114,7 @@ $logoWidth: 45%;
 // Fonctionnement
 
 .fonctionnement{
-  padding: 25px 0;
+  padding: 25px 0 35px 0;
 }
 
 .section-title{
@@ -118,62 +124,151 @@ $logoWidth: 45%;
 
 }
 
-.fonctionnement__actions{
-
-}
 
 .action-list{
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .action-list__item{
-  width: 100%;
+  @include flexCenter-lg();
+  @include links();
+  width: 95%;
+  position: relative;
+  height: 100%;
   padding: 30px 0;
   border-radius: 30px;
   background-color: #f6f6f6;
-  box-shadow: 0px 4px 6px rgba(#000, 0.3);
+  @include box-shadow();
   margin-bottom: 25px;
+
   &:hover{
     background-color: $listItemHover;
-     a > div > i{
+    div > i{
       color: $primary-color;
     }
   }
+
 }
 
-.action-list__link{
-  @include flexCenter-lg();
-  @include links();
-  position: relative;
+.list-id{
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  @include flexCenter();
+  flex-shrink: 0;
+  @include rounded(30px, 30px);
+  background-color: $primary-color;
+  color: white;
+
+}
+
+.list-content {
+  width: 75%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 500;
 
-
-  .link-id{
-    position: absolute;
-    left: 0;
-    transform: translateX(-50%);
-    @include flexCenter();
-    @include rounded(30px, 30px);
-    background-color: $primary-color;
-    color: white;
-
-  }
-  .link-content{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-weight: 500;
-
-    i{
+    i {
       font-size: 18px;
       padding: 0px 15px;
       color: #7e7e7e;
     }
-    p{
+
+    p {
       padding: 0px 15px;
       @include respFontFrom14();
     }
+}
+
+
+// Restaurants
+
+
+.restaurants{
+  background-color: #f6f6f6;
+  width: 100%;
+}
+
+.restaurants-gridList{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,255px);
+  grid-row-gap: 20px;
+}
+
+.restaurant-item{
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 20px;
+  overflow: hidden;
+  @include box-shadow();
+}
+
+.restaurant__image{
+  height: 175px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-position: center;
+  background-size:  cover;
+  background-repeat: no-repeat;
+
+  //&:nth-child(1){
+  //  background: url("./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center / cover no-repeat;
+  //}
+  //&:nth-child(2)n{
+  //  background-image: url("./../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  //}
+  //&:nth-child(3){
+  //  background: url("./../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center / cover no-repeat;
+  //}
+  //&:nth-child(4){
+  //  background: url("./../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center / cover no-repeat;
+  //}
+}
+
+.restaurant__badge{
+  height: 30px;
+  //width: 20%;
+  padding: 0 15px;
+  border-radius: 3px;
+  background-color: $third-color;
+  position: relative;
+  top: 15px;
+  right: 3%;
+  @include flexCenter();
+
+  span{
+    color: darken($third-color, 40%);
+    font-weight: 500;
   }
 }
+
+  // Restaurant - item Content
+
+.restaurant__content{
+  position: relative;
+  width: 100%;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: lighter;
+  h3{
+    padding-bottom: 5px
+  }
+}
+
+.restaurant__item-icon{
+  i{
+    font-size: 20px;
+  }
+}
+
