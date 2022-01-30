@@ -56,6 +56,12 @@ $logoWidth: 45%;
 
 .container{
   @include centerBlocks();
+  @media screen and (min-width: 460px){
+    width: 85%;
+  }
+  @media screen and (min-width: 550px){
+    width: 80%;
+  }
 }
 
 .page-title{
@@ -115,12 +121,20 @@ $logoWidth: 45%;
 
 .fonctionnement{
   padding: 25px 0 35px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 45px 0px 65px 0;
+  }
 }
 
 .section-title{
   @include titles();
   padding: 25px 0;
   @include respFontFrom18();
+
+  @media screen and (min-width: 768px) {
+    padding: 25px 0 45px 0;
+  }
 
 }
 
@@ -130,6 +144,28 @@ $logoWidth: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  @media screen and (min-width: 768px) {
+    width: 85%;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 790px) {
+    width: 80%;
+  }
+  @media screen and (min-width: 820px) {
+    width: 77%;
+  }
+  @media screen and (min-width: 850px) {
+    width: 75%;
+  }
+  @media screen and (min-width: 880px) {
+    width: 72%;
+  }
+  @media screen and (min-width: 930px) {
+    width: 70%;
+  }
+  @media screen and (min-width: 960px) {
+    width: 66%;
+  }
 }
 
 .action-list__item{
@@ -143,8 +179,14 @@ $logoWidth: 45%;
   background-color: #f6f6f6;
   @include box-shadow();
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    padding: 35px 0;
+    border-radius: 35px;
+  }
 
-  &:hover{
+
+    &:hover{
     background-color: $listItemHover;
     div > i{
       color: $primary-color;
@@ -173,6 +215,7 @@ $logoWidth: 45%;
   justify-content: flex-start;
   font-weight: 500;
 
+
     i {
       font-size: 18px;
       padding: 0px 15px;
@@ -192,15 +235,10 @@ $logoWidth: 45%;
 .restaurants{
   background-color: #f6f6f6;
   width: 100%;
-  @media screen and (min-width: 460px){
-    h2{
-      margin-left: 2.5%;
-    }
-  }
-  @media screen and (min-width: 550px){
-    h2{
-      margin-left: 5%;
-    }
+  padding: 35px 0px 65px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 55px 0px 85px 0;
   }
 }
 
@@ -208,10 +246,9 @@ $logoWidth: 45%;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5,255px);
+  grid-template-rows: repeat(4,255px);
   grid-row-gap: 20px;
   @media screen and (min-width: 460px){
-    width: 95%;
     margin: 0 auto;
     grid-row-gap: 30px;
   }
@@ -223,21 +260,17 @@ $logoWidth: 45%;
     grid-template-rows: repeat(4,290px);
   }
 
-  @media screen and (min-width: 550px){
-    width: 90%;
-  }
-
   @media screen and (min-width: 590px) {
-    grid-template-rows: repeat(5,320px);
+    grid-template-rows: repeat(4,320px);
     grid-row-gap: 50px;
   }
 
   @media screen and (min-width: 617px) {
-    grid-template-rows: repeat(5,330px);
+    grid-template-rows: repeat(4,330px);
   }
 
   @media screen and (min-width: 680px){
-    grid-template-rows: repeat(5,350px);
+    grid-template-rows: repeat(4,350px);
   }
 
 }

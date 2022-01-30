@@ -252,6 +252,16 @@ h3 {
   margin: 0 auto;
   height: optional;
 }
+@media screen and (min-width: 460px) {
+  .container {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+}
 
 .page-title {
   width: 100%;
@@ -514,6 +524,11 @@ h3 {
 .fonctionnement {
   padding: 25px 0 35px 0;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    padding: 45px 0px 65px 0;
+  }
+}
 
 .section-title {
   font-family: "Roboto", sans-serif;
@@ -551,12 +566,53 @@ h3 {
     font-size: 28px;
   }
 }
+@media screen and (min-width: 768px) {
+  .section-title {
+    padding: 25px 0 45px 0;
+  }
+}
 
 .action-list {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .action-list {
+    width: 85%;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 790px) {
+  .action-list {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 820px) {
+  .action-list {
+    width: 77%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .action-list {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 880px) {
+  .action-list {
+    width: 72%;
+  }
+}
+@media screen and (min-width: 930px) {
+  .action-list {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .action-list {
+    width: 66%;
+  }
 }
 
 .action-list__item {
@@ -575,6 +631,13 @@ h3 {
   background-color: #f6f6f6;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .action-list__item {
+    margin-bottom: 50px;
+    padding: 35px 0;
+    border-radius: 35px;
+  }
 }
 .action-list__item:hover {
   background-color: #f5edff;
@@ -648,15 +711,11 @@ h3 {
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
+  padding: 35px 0px 65px 0px;
 }
-@media screen and (min-width: 460px) {
-  .restaurants h2 {
-    margin-left: 2.5%;
-  }
-}
-@media screen and (min-width: 550px) {
-  .restaurants h2 {
-    margin-left: 5%;
+@media screen and (min-width: 768px) {
+  .restaurants {
+    padding: 55px 0px 85px 0;
   }
 }
 
@@ -664,12 +723,11 @@ h3 {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 255px);
+  grid-template-rows: repeat(4, 255px);
   grid-row-gap: 20px;
 }
 @media screen and (min-width: 460px) {
   .restaurants-gridList {
-    width: 95%;
     margin: 0 auto;
     grid-row-gap: 30px;
   }
@@ -684,25 +742,20 @@ h3 {
     grid-template-rows: repeat(4, 290px);
   }
 }
-@media screen and (min-width: 550px) {
-  .restaurants-gridList {
-    width: 90%;
-  }
-}
 @media screen and (min-width: 590px) {
   .restaurants-gridList {
-    grid-template-rows: repeat(5, 320px);
+    grid-template-rows: repeat(4, 320px);
     grid-row-gap: 50px;
   }
 }
 @media screen and (min-width: 617px) {
   .restaurants-gridList {
-    grid-template-rows: repeat(5, 330px);
+    grid-template-rows: repeat(4, 330px);
   }
 }
 @media screen and (min-width: 680px) {
   .restaurants-gridList {
-    grid-template-rows: repeat(5, 350px);
+    grid-template-rows: repeat(4, 350px);
   }
 }
 
