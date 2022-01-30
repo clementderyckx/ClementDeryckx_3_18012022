@@ -192,6 +192,16 @@ $logoWidth: 45%;
 .restaurants{
   background-color: #f6f6f6;
   width: 100%;
+  @media screen and (min-width: 460px){
+    h2{
+      margin-left: 2.5%;
+    }
+  }
+  @media screen and (min-width: 550px){
+    h2{
+      margin-left: 5%;
+    }
+  }
 }
 
 .restaurants-gridList{
@@ -200,6 +210,36 @@ $logoWidth: 45%;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5,255px);
   grid-row-gap: 20px;
+  @media screen and (min-width: 460px){
+    width: 95%;
+    margin: 0 auto;
+    grid-row-gap: 30px;
+  }
+  @media screen and (min-width: 460px){
+    grid-template-rows: repeat(4,280px);
+  }
+
+  @media screen and (min-width: 500px){
+    grid-template-rows: repeat(4,290px);
+  }
+
+  @media screen and (min-width: 550px){
+    width: 90%;
+  }
+
+  @media screen and (min-width: 590px) {
+    grid-template-rows: repeat(5,320px);
+    grid-row-gap: 50px;
+  }
+
+  @media screen and (min-width: 617px) {
+    grid-template-rows: repeat(5,330px);
+  }
+
+  @media screen and (min-width: 680px){
+    grid-template-rows: repeat(5,350px);
+  }
+
 }
 
 .restaurant-item{
@@ -208,6 +248,7 @@ $logoWidth: 45%;
   border-radius: 20px;
   overflow: hidden;
   @include box-shadow();
+
 }
 
 .restaurant__image{
@@ -219,7 +260,15 @@ $logoWidth: 45%;
   background-position: center;
   background-size:  cover;
   background-repeat: no-repeat;
-
+  @media screen and (min-width: 460px){
+    height: 200px;
+  }
+  @media screen and (min-width: 590px){
+    height: 230px;
+  }
+  @media screen and (min-width: 680px){
+    height: 250px;
+  }
   //&:nth-child(1){
   //  background: url("./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center / cover no-repeat;
   //}
@@ -253,7 +302,7 @@ $logoWidth: 45%;
 
   // Restaurant - item Content
 
-.restaurant__content{
+.restaurant__content {
   position: relative;
   width: 100%;
   padding: 15px 15px;
@@ -261,9 +310,16 @@ $logoWidth: 45%;
   justify-content: space-between;
   align-items: center;
   font-weight: lighter;
-  h3{
-    padding-bottom: 5px
+
+  h3 {
+    padding-bottom: 5px;
+    @include respFontFrom12();
   }
+
+  @media screen and (min-width: 550px) {
+    padding: 15px 25px;
+  }
+
 }
 
 .restaurant__item-icon{

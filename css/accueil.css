@@ -101,6 +101,10 @@ h3 {
   font-size: 16px;
 }
 
+.upperCase {
+  text-transform: capitalize;
+}
+
 .header {
   width: 100%;
   height: 115px;
@@ -645,6 +649,16 @@ h3 {
   background-color: #f6f6f6;
   width: 100%;
 }
+@media screen and (min-width: 460px) {
+  .restaurants h2 {
+    margin-left: 2.5%;
+  }
+}
+@media screen and (min-width: 550px) {
+  .restaurants h2 {
+    margin-left: 5%;
+  }
+}
 
 .restaurants-gridList {
   display: grid;
@@ -652,6 +666,44 @@ h3 {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 255px);
   grid-row-gap: 20px;
+}
+@media screen and (min-width: 460px) {
+  .restaurants-gridList {
+    width: 95%;
+    margin: 0 auto;
+    grid-row-gap: 30px;
+  }
+}
+@media screen and (min-width: 460px) {
+  .restaurants-gridList {
+    grid-template-rows: repeat(4, 280px);
+  }
+}
+@media screen and (min-width: 500px) {
+  .restaurants-gridList {
+    grid-template-rows: repeat(4, 290px);
+  }
+}
+@media screen and (min-width: 550px) {
+  .restaurants-gridList {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 590px) {
+  .restaurants-gridList {
+    grid-template-rows: repeat(5, 320px);
+    grid-row-gap: 50px;
+  }
+}
+@media screen and (min-width: 617px) {
+  .restaurants-gridList {
+    grid-template-rows: repeat(5, 330px);
+  }
+}
+@media screen and (min-width: 680px) {
+  .restaurants-gridList {
+    grid-template-rows: repeat(5, 350px);
+  }
 }
 
 .restaurant-item {
@@ -671,6 +723,21 @@ h3 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 460px) {
+  .restaurant__image {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 590px) {
+  .restaurant__image {
+    height: 230px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .restaurant__image {
+    height: 250px;
+  }
 }
 
 .restaurant__badge {
@@ -701,6 +768,41 @@ h3 {
 }
 .restaurant__content h3 {
   padding-bottom: 5px;
+}
+@media screen and (min-width: 392px) {
+  .restaurant__content h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .restaurant__content h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .restaurant__content h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 563px) {
+  .restaurant__content h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 617px) {
+  .restaurant__content h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 755px) {
+  .restaurant__content h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 550px) {
+  .restaurant__content {
+    padding: 15px 25px;
+  }
 }
 
 .restaurant__item-icon i {
