@@ -1,0 +1,56 @@
+.restaurant-card{
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 20px;
+  overflow: hidden;
+  @include box-shadow();
+
+  .restaurant__image{
+    height: 175px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-position: center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 460px){
+      height: 200px;
+    }
+    @media screen and (min-width: 590px){
+      height: 230px;
+    }
+    @media screen and (min-width: 680px){
+      height: 250px;
+    }
+
+  }
+
+
+  .restaurant__content {
+    position: relative;
+    width: 100%;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: lighter;
+
+    h3 {
+      padding-bottom: 5px;
+      @include respFontFrom12();
+    }
+
+    @media screen and (min-width: 550px) {
+      padding: 15px 25px;
+    }
+
+  }
+
+  .restaurant__item-icon{
+    i{
+      font-size: 20px;
+    }
+  }
+
+
+}

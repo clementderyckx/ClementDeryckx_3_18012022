@@ -1,0 +1,10 @@
+.section-title{
+  @include titles();
+  padding: 25px 0;
+  @include respFontFrom18();
+
+  @media screen and (min-width: 768px) {
+    padding: 25px 0 45px 0;
+  }
+
+}

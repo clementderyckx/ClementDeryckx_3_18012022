@@ -1,0 +1,149 @@
+// TODO : Revoir les mediasQueries du bouton explorer nos restaurant à réelargir suite à retrécissement container
+// TODO : Aggrandir les pastilles de la liste fonctionnement avec la police (padding ?)
+// TODO : Medias queries restaurants tablettes :
+  // Passage à une grid 2 col
+
+
+@import "./../app";
+
+$logoWidth: 45%;
+
+
+.header{
+  width: 100%;
+  height: 115px;
+  position: relative;
+  top: 0;
+  left: 0;
+  @include respFontFrom14();
+  @include headerMedias();
+
+}
+
+.header__logo{
+  @include flexCenter-lg(65px);
+  height: 60%;
+  background-color: #fff;
+  box-shadow: 0px 6px 8px rgba(0,0,0, 0.5);
+
+  @include headerLogoMedias();
+
+}
+.logo--svg{
+  width: $logoWidth;
+  @include logoSvgMedias();
+  svg{
+    width: 100%;
+  }
+}
+
+.header__location{
+  @include flexCenter-lg(50px);
+  background-color: darken(#FFF, 10%);
+
+  @include headerLocationMedias();  
+
+}
+
+.location__infos{
+  @include flexCenter();
+  i {
+    padding: 10px;
+    font-size: 18px;
+  }
+  p{
+    padding: 10px;
+    
+  }
+}
+
+
+// Titres
+
+.container{
+  @include centerBlocks();
+  @media screen and (min-width: 460px){
+    width: 85%;
+  }
+  @media screen and (min-width: 550px){
+    width: 80%;
+  }
+}
+
+.page-title{
+  @include centerBlocks(100%);
+  @include textCenter();
+  padding: 20px 0 55px 0;
+  background-color: #f6f6f6;
+  
+}
+
+.page-title__title{
+  @include centerBlocks(80%);
+  h1{
+    padding: 25px;
+    @include h1Medias();
+  }
+}
+
+.page-title__catch-phrase{
+  @include centerBlocks(80%);
+  padding-bottom: 30px;
+  font-weight: lighter;
+
+  @include catchPhraseMedias();
+
+}
+
+
+
+
+// Fonctionnement
+
+.fonctionnement{
+  padding: 25px 0 35px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 45px 0px 65px 0;
+  }
+}
+
+
+.list-id{
+  @extend .listBadgeId;
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+
+// Restaurants
+
+
+.restaurants{
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 35px 0px 65px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 55px 0px 85px 0;
+  }
+}
+
+
+.restaurant__image{
+  background-image: url("./../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  //&:nth-child(1){
+  //  background: url("./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center / cover no-repeat;
+  //}
+  //&:nth-child(2)n{
+  //  background-image: url("./../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  //}
+  //&:nth-child(3){
+  //  background: url("./../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center / cover no-repeat;
+  //}
+  //&:nth-child(4){
+  //  background: url("./../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center / cover no-repeat;
+  //}
+
+}

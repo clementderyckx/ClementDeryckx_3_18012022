@@ -1,0 +1,32 @@
+.restaurants-gridList{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,255px);
+  grid-row-gap: 20px;
+  @media screen and (min-width: 460px){
+    margin: 0 auto;
+    grid-row-gap: 30px;
+  }
+  @media screen and (min-width: 460px){
+    grid-template-rows: repeat(4,280px);
+  }
+
+  @media screen and (min-width: 500px){
+    grid-template-rows: repeat(4,290px);
+  }
+
+  @media screen and (min-width: 590px) {
+    grid-template-rows: repeat(4,320px);
+    grid-row-gap: 50px;
+  }
+
+  @media screen and (min-width: 617px) {
+    grid-template-rows: repeat(4,330px);
+  }
+
+  @media screen and (min-width: 680px){
+    grid-template-rows: repeat(4,350px);
+  }
+
+}
