@@ -1,0 +1,22 @@
+{
+  "name": "clementderyckx_3_18012022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/app.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./public/css/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clemdev33/ClementDeryckx_3_18012022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 5 versions",
+  "bugs": {
+    "url": "https://github.com/clemdev33/ClementDeryckx_3_18012022/issues"
+  },
+  "homepage": "https://github.com/clemdev33/ClementDeryckx_3_18012022#readme"
+}

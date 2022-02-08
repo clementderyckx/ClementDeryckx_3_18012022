@@ -1,41 +1,13 @@
+// TODO : REFACTORISER LES COULEURS ET LES FONT-SIZE EN MAPS PUIS MIXINS
+// TODO : REFACTORISER LES MEDIASQUERIES AVEC @CONTENT
+
 // TODO : Revoir les mediasQueries du bouton explorer nos restaurant à réelargir suite à retrécissement container
 // TODO : Aggrandir les pastilles de la liste fonctionnement avec la police (padding ?)
 // TODO : Medias queries restaurants tablettes :
   // Passage à une grid 2 col
 
-
 @import "./../app";
 
-$logoWidth: 45%;
-
-
-.header{
-  width: 100%;
-  height: 115px;
-  position: relative;
-  top: 0;
-  left: 0;
-  @include respFontFrom14();
-  @include headerMedias();
-
-}
-
-.header__logo{
-  @include flexCenter-lg(65px);
-  height: 60%;
-  background-color: #fff;
-  box-shadow: 0px 6px 8px rgba(0,0,0, 0.5);
-
-  @include headerLogoMedias();
-
-}
-.logo--svg{
-  width: $logoWidth;
-  @include logoSvgMedias();
-  svg{
-    width: 100%;
-  }
-}
 
 .header__location{
   @include flexCenter-lg(50px);
@@ -49,7 +21,6 @@ $logoWidth: 45%;
   @include flexCenter();
   i {
     padding: 10px;
-    font-size: 18px;
   }
   p{
     padding: 10px;
@@ -67,6 +38,12 @@ $logoWidth: 45%;
   }
   @media screen and (min-width: 550px){
     width: 80%;
+  }
+  @media screen and (min-width: 890px){
+    width: 77%;
+  }
+  @media screen and (min-width: 992px){
+    width: 85%;
   }
 }
 
@@ -90,7 +67,9 @@ $logoWidth: 45%;
   @include centerBlocks(80%);
   padding-bottom: 30px;
   font-weight: lighter;
-
+  .catch-phrase{
+    @include respFontFrom14();
+  }
   @include catchPhraseMedias();
 
 }
@@ -114,6 +93,9 @@ $logoWidth: 45%;
   position: absolute;
   left: 0;
   transform: translateX(-50%);
+  @media screen and (max-width: 992px){
+    font-size: 20px;
+  }
 }
 
 

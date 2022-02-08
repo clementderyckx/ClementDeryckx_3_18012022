@@ -1,0 +1,7 @@
+.logo--svg{
+    width: 45%;
+    @include logoSvgMedias();
+  svg{
+    width: 100%;
+  }
+}

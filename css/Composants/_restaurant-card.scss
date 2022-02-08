@@ -4,6 +4,11 @@
   border-radius: 20px;
   overflow: hidden;
   @include box-shadow();
+  @media screen and (min-width: 1375px){
+    max-height: 350px;
+    position: relative;
+    top: 0;
+  }
 
   .restaurant__image{
     height: 175px;
@@ -22,7 +27,27 @@
     @media screen and (min-width: 680px){
       height: 250px;
     }
-
+    @media screen and (min-width: 768px){
+      height: 285px;
+    }
+    @media screen and (min-width: 830px){
+      height: 310px;
+    }
+    @media screen and (min-width: 930px){
+      height: 330px;
+    }
+    @media screen and (min-width: 992px){
+      height: 190px;
+    }
+    @media screen and (min-width: 1092px){
+      height: 210px;
+    }
+    @media screen and (min-width: 1240px){
+      height: 225px;
+    }
+    @media screen and (min-width: 1375px){
+      height: 250px;
+    }
   }
 
 
@@ -34,21 +59,48 @@
     justify-content: space-between;
     align-items: center;
     font-weight: lighter;
+    @include respFontFrom12();
+
 
     h3 {
       padding-bottom: 5px;
       @include respFontFrom12();
+
     }
 
     @media screen and (min-width: 550px) {
       padding: 15px 25px;
     }
-
+    @media screen and (min-width: 768px) {
+      padding: 20px 25px;
+    }
+    @media screen and (min-width: 830px) {
+      padding: 20px 30px;
+    }
+    @media screen and (min-width: 930px) {
+      padding: 25px 30px;
+    }
+    @media screen and (min-width: 992px) {
+      padding: 10px 20px;
+      max-height: 100px;
+    }
+    @media screen and (min-width: 1092px) {
+      padding: 14px 20px;
+    }
+    @media screen and (min-width: 1240px) {
+      padding: 17px 20px;
+    }
+    @media screen and (min-width: 1375px) {
+      padding: 22px 22px;
+    }
   }
 
   .restaurant__item-icon{
     i{
-      font-size: 20px;
+      @include respFontFrom18();
+      @media screen and (min-width: 992px) {
+        font-size: 24px;
+      }
     }
   }
 

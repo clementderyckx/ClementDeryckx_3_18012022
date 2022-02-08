@@ -34,6 +34,12 @@
   @media screen and(min-width:755px) {
     font-size: 26px;
   }
+  @media screen and(min-width:830px) {
+    font-size: 28px;
+  }
+  @media screen and(min-width:992px) {
+    font-size: 20px;
+  }
 }
 
 @mixin respFontFrom14(){
@@ -44,17 +50,21 @@
       font-size: 18px;
   }
   @media screen and(min-width:500px) {
-      font-size: 20px;
+      //font-size: 20px;
   }
   @media screen and(min-width:563px) {
-      font-size: 22px;
+      font-size: 20px;
   }
   @media screen and(min-width:617px) {
-      font-size: 24px;
+      //font-size: 22px;
   }
   @media screen and(min-width:755px) {
-      font-size: 26px;
+      font-size: 24px;
   }
+  @media screen and(min-width:992px) {
+    font-size: 22px;
+  }
+
 }
 
 @mixin respFontFrom18(){
