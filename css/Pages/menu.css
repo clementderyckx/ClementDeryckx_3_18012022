@@ -61,21 +61,6 @@ html {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 563px) {
-  html {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 617px) {
-  html {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 755px) {
-  html {
-    font-size: 26px;
-  }
-}
 
 body {
   height: 100vh;
@@ -342,6 +327,124 @@ h3 {
 }
 .logo--svg svg {
   width: 100%;
+}
+.logo--svg svg path {
+  fill: #101010;
+}
+
+.cta {
+  width: 50%;
+  margin: 0 auto;
+  height: optional;
+  padding: 15px 10px;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, 45%, rgba(147, 86, 220, 0.8));
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+@media screen and (min-width: 563px) {
+  .cta {
+    padding: 20px 10px;
+    border-radius: 35px;
+  }
+}
+@media screen and (min-width: 617px) {
+  .cta {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 682px) {
+  .cta {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 860px) {
+  .cta {
+    width: 46%;
+  }
+}
+@media screen and (min-width: 972px) {
+  .cta {
+    width: 42%;
+  }
+}
+@media screen and (min-width: 1154px) {
+  .cta {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1254px) {
+  .cta {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1316px) {
+  .cta {
+    width: 31%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .cta {
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1460px) {
+  .cta {
+    width: 27%;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .cta {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1710px) {
+  .cta {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1780px) {
+  .cta {
+    width: 23%;
+  }
+}
+.cta:hover {
+  background: linear-gradient(#ff83dd, 45%, rgba(152, 94, 222, 0.8));
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.cta a {
+  text-decoration: none;
+  color: #FFF;
+}
+@media screen and (min-width: 392px) {
+  .cta a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .cta a {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 563px) {
+  .cta a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 755px) {
+  .cta a {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cta a {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1399px) and (min-width: 755px) {
+  .cta a {
+    font-size: 26px;
+  }
 }
 
 .page-title__cta {
@@ -857,8 +960,119 @@ h3 {
   font-weight: 500;
 }
 
+.footer {
+  background-color: #353535;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .menu-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+}
+.footer .footer-logo {
+  padding: 25px 0;
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .footer .footer-logo {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .logo--svg {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer .logo--svg svg {
+  height: 20px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .footer .logo--svg svg {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .logo--svg svg {
+    height: 60px;
+  }
+}
+.footer .logo--svg svg path {
+  fill: white;
+  position: relative;
+  left: 0px;
+}
+
+.footer-list {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+@media screen and (min-width: 992px) {
+  .footer-list {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer-list .footer-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .footer-list .footer-item {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer-list .footer-item {
+    padding-bottom: 0;
+  }
+}
+.footer-list .footer-link {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  .footer-list .footer-link {
+    align-items: center;
+    height: 100%;
+  }
+}
+.footer-list .footer-link i {
+  padding-right: 10px;
+}
+
 .header {
-  max-height: 70px;
+  max-height: 80px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header {
+    height: 100px;
+  }
 }
 
 .header__icon {
@@ -872,10 +1086,35 @@ h3 {
 .header__icon i {
   font-size: 18px;
 }
+@media screen and (min-width: 992px) {
+  .header__icon i {
+    font-size: 28px;
+  }
+}
 
 .header__logo {
   box-shadow: none;
   height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__logo {
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .menu {
@@ -884,11 +1123,18 @@ h3 {
   border-radius: 30px 30px 0 0;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    border-radius: 40px 40px 0 0;
+    padding: 3vw 0;
+  }
+}
 
 .menu-banner-img {
-  height: 220px;
+  height: 58vw;
+  max-height: 600px;
   width: 100%;
-  background: url("./../../images/restaurants2/toa-heftiba-DQKerTsQwi0-unsplash.jpg ") center/cover no-repeat;
+  background: url("./../../images/restaurants2/toa-heftiba-DQKerTsQwi0-unsplash.jpg ") 0px 75%/cover no-repeat;
 }
 
 .menu-container {
@@ -908,48 +1154,141 @@ h3 {
   font-family: "Shrikhand";
   text-align: left;
 }
+@media screen and (min-width: 450px) {
+  .restaurant-title .title {
+    font-size: 26px;
+    padding: 32px 0;
+  }
+}
+@media screen and (min-width: 500px) {
+  .restaurant-title .title {
+    font-size: 28px;
+    padding: 35px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurant-title .title {
+    font-size: 3.5vw;
+    padding: 3vw 0;
+  }
+}
 .restaurant-title i {
   font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-title i {
+    font-size: 3vw;
+  }
 }
 
 .menu__listLayout {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 40px;
 }
 
 .menu-group {
   width: 100%;
   padding: 15px 0;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .menu-group {
+    margin-bottom: 3vw;
+  }
 }
 
 .menu-group__title {
   position: relative;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 450px) {
+  .menu-group__title {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .menu-group__title {
+    margin-bottom: 35px;
+  }
+}
 .menu-group__title .title {
   font-weight: lighter;
+}
+@media screen and (min-width: 392px) {
+  .menu-group__title .title {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .menu-group__title .title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .menu-group__title .title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-group__title .title {
+    font-size: 24px;
+  }
 }
 .menu-group__title .title::after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 3px;
   width: 40px;
-  bottom: -4px;
+  bottom: -5px;
   left: 0;
   background-color: #99E2D0;
 }
+@media screen and (min-width: 575px) {
+  .menu-group__title .title::after {
+    bottom: -8px;
+  }
+}
 
-.menu-group__items {
+.menu-items {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 70px);
   grid-row-gap: 15px;
 }
+@media screen and (min-width: 450px) {
+  .menu-items {
+    grid-template-rows: repeat(3, 85px);
+    grid-row-gap: 20px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .menu-items {
+    grid-template-rows: repeat(3, 85px);
+  }
+}
+@media screen and (min-width: 575px) {
+  .menu-items {
+    grid-template-rows: repeat(3, 90px);
+    grid-row-gap: 25px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .menu-items {
+    grid-template-rows: repeat(3, 100px);
+    grid-row-gap: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-items {
+    grid-template-rows: repeat(3, 120px);
+    grid-row-gap: 2.5vw;
+  }
+}
 
-.menu-group__item {
+.menu-item {
+  height: 100%;
   background-color: #fff;
   border-radius: 20px;
   position: relative;
@@ -957,24 +1296,72 @@ h3 {
   flex-direction: column;
   justify-content: center;
   padding: 15px;
+  overflow: hidden;
+  cursor: pointer;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 }
-.menu-group__item:hover > .check-animation {
-  animation: 1.5s linear 1 animCheck;
+.menu-item:hover:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  right: -20%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  height: 100%;
+  width: 20%;
+  border-radius: 0 20px 20px 0;
+  animation: 1.3s ease-in-out 1 animCheck;
+  background-color: #99E2D0;
 }
-.menu-group__item .item__title {
+@media screen and (min-width: 450px) {
+  .menu-item {
+    border-radius: 25px;
+    padding: 0 25px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .menu-item {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .menu-item {
+    padding: 0 35px;
+  }
+}
+.menu-item .item__title {
   padding-bottom: 5px;
 }
-.menu-group__item .item__content {
+@media screen and (min-width: 392px) {
+  .menu-item .item__title {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .menu-item .item__title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .menu-item .item__title {
+    font-size: 20px;
+  }
+}
+.menu-item .item__content {
   display: flex;
   width: 100%;
   justify-content: space-between;
   font-weight: lighter;
 }
-.menu-group__item .item__price {
+.menu-item .item__price {
   font-weight: 500;
 }
-.menu-group__item .check-animation {
+.menu-item .check-animation {
   position: absolute;
   left: 100%;
   width: 20%;
@@ -992,22 +1379,24 @@ h3 {
 @keyframes animCheck {
   0% {
     transform: translateX(0%);
-  }
-  10% {
     opacity: 100%;
   }
-  20% {
+  50% {
     transform: translateX(-100%);
     opacity: 100%;
   }
-  70% {
+  100% {
     transform: translateX(-100%);
-    opacity: 100%;
+    opacity: 0%;
   }
-  99% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
+}
+.cta {
+  margin: 35px auto;
+}
+
+.footer {
+  position: relative;
+  top: -50px;
 }
 
 /*# sourceMappingURL=menu.css.map */

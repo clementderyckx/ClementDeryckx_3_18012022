@@ -3,5 +3,8 @@
     @include logoSvgMedias();
   svg{
     width: 100%;
+    path{
+      fill: #101010;
+    }
   }
 }
