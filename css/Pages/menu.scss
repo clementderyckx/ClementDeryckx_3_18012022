@@ -185,6 +185,12 @@
   //scrollbar-base-color: transparent;
   @include box-shadow;
   &:hover{
+    //.item__content{
+    //  animation: 1.3s ease-in-out 1 animFollow;
+    //}
+    .item__price{
+      animation: 1.3s ease-in-out 1 anim2;
+    }
     &:before{
 
       font-family: "Font Awesome 5 Free";
@@ -222,6 +228,7 @@
   }
   .item__content{
     display: flex;
+    font-size: 16px;
     width: 100%;
     justify-content: space-between;
     font-weight: lighter;
@@ -243,6 +250,53 @@
     border-radius: 0px 20px 20px 0;
     @include bgColor-third;
 
+  }
+}
+
+$transformvalue:-250%;
+@media screen and (min-width: 1000px) {
+  $transformvalue: -500%;
+}
+@media screen and (max-width: 999px) {
+  $transformvalue: -250%;
+}
+@keyframes anim2 {
+  0%{
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+  50%{
+    transform: translateX($transformvalue);
+    opacity: 100%;
+  }
+  99% {
+    transform: translateX($transformvalue);
+    opacity: 0%;
+  }
+  99% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+
+@keyframes animFollow{
+  0%{
+    width: 100%;
+  }
+  50%{
+    width: 80%;
+    opacity: 100%;
+
+  }
+  80%{
+    width: 80%;
+  }
+  99%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+    width: 100%;
   }
 }
 
