@@ -1,3 +1,95 @@
+@keyframes checkAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-100%);
+  }
+  85% {
+    transform: translateX(-100%);
+  }
+  99% {
+    transform: translateX(0);
+  }
+}
+@keyframes animFollowMobile {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-75px);
+  }
+  85% {
+    transform: translateX(-75px);
+  }
+  99% {
+    transform: translateX(0);
+  }
+}
+@keyframes animFollowMobile1 {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-80px);
+  }
+  85% {
+    transform: translateX(-80px);
+  }
+  99% {
+    transform: translateX(0);
+  }
+}
+@keyframes animFollowMobile2 {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-90px);
+  }
+  85% {
+    transform: translateX(-90px);
+  }
+  99% {
+    transform: translateX(0);
+  }
+}
+@keyframes animFollowMobile3 {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-100px);
+  }
+  85% {
+    transform: translateX(-100px);
+  }
+  99% {
+    transform: translateX(0);
+  }
+}
+@keyframes animFollowTablet {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-110px);
+  }
+  85% {
+    transform: translateX(-110px);
+  }
+  99% {
+    transform: translateX(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;

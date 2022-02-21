@@ -1,0 +1,43 @@
+@mixin translate($value){
+  0%{
+    transform: translateX(0);
+  }
+  15%{
+    transform: translateX($value);
+  }
+  85% {
+    transform: translateX($value);
+  }
+  99% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes checkAnimation {
+  @include translate(-100%);
+}
+@keyframes animFollowMobile {
+  @include translate(-75px)
+}
+@keyframes animFollowMobile1 {
+  @include translate(-80px)
+}
+@keyframes animFollowMobile2 {
+  @include translate(-90px)
+}
+@keyframes animFollowMobile3 {
+  @include translate(-100px)
+}
+
+@keyframes animFollowTablet {
+  @include translate(-110px)
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
