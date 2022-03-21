@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["la-palette-du-gout.scss"],"names":[],"mappings":"AAAA;EACE","file":"la-palette-du-gout.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACd,UAAU,EAAC,0EAA0E,CAAC,GAAG,CAAC,SAAW,CAAC,SAAS;CAEhH",
+    "sources": [
+        "la-palette-du-gout.scss"
+    ],
+    "names": [],
+    "file": "la-palette-du-gout.css"
+}

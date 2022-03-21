@@ -17,20 +17,20 @@
   @include translate(-100%);
 }
 @keyframes animFollowMobile {
-  @include translate(-75px)
+  @include translate(-75px);
 }
 @keyframes animFollowMobile1 {
-  @include translate(-80px)
+  @include translate(-80px);
 }
 @keyframes animFollowMobile2 {
-  @include translate(-90px)
+  @include translate(-90px);
 }
 @keyframes animFollowMobile3 {
-  @include translate(-100px)
+  @include translate(-100px);
 }
 
 @keyframes animFollowTablet {
-  @include translate(-110px)
+  @include translate(-110px);
 }
 
 @keyframes spin{
@@ -39,5 +39,61 @@
   }
   100%{
     transform: rotate(360deg);
+  }
+}
+
+@keyframes spinLoader {
+  0%{
+      opacity: 100%;
+      transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50%{
+      opacity: 100%;
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
+  60%{
+      transform: translate(-50%, -50%) rotate(360deg);
+      opacity: 100%;
+  }
+  100%{
+      transform: translate(-50%, -50%) rotate(720deg);
+      opacity: 0;
+  }
+}
+
+@keyframes fade-out{
+  0%{
+    opacity: 100%;
+  }
+  85%{
+    opacity: 100%;
+  }
+  90%{
+    opacity: 75%;
+  }
+  92%{
+    opacity: 55%;  
+  }
+  94%{
+    opacity: 35%;  
+  }
+  96%{
+    opacity: 20%;  
+  }
+  98%{
+    opacity: 10%;  
+  }
+  100%{
+    opacity: 0%;
+  }
+
+}
+
+@keyframes fillIcon{
+  0%{
+  transform: translateY(100%);
+  }
+  100%{
+  transform: translateY(0%);
   }
 }

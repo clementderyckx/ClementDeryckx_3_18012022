@@ -1,11 +1,3 @@
-// TODO : REFACTORISER LES COULEURS ET LES FONT-SIZE EN MAPS PUIS MIXINS
-// TODO : REFACTORISER LES MEDIASQUERIES AVEC @CONTENT
-
-// TODO : Revoir les mediasQueries du bouton explorer nos restaurant à réelargir suite à retrécissement container
-// TODO : Aggrandir les pastilles de la liste fonctionnement avec la police (padding ?)
-// TODO : Medias queries restaurants tablettes :
-  // Passage à une grid 2 col
-
 @import "./../app";
 
 
@@ -113,19 +105,31 @@
 }
 
 
-.restaurant__image{
-  background-image: url("./../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  //&:nth-child(1){
-  //  background: url("./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center / cover no-repeat;
-  //}
-  //&:nth-child(2)n{
-  //  background-image: url("./../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  //}
-  //&:nth-child(3){
-  //  background: url("./../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center / cover no-repeat;
-  //}
-  //&:nth-child(4){
-  //  background: url("./../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center / cover no-repeat;
-  //}
 
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .restaurant-card{
+   .restaurant__image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:nth-of-type(1) > .restaurant__image{
+    background-image: url('./../../images/restaurants2/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+   }
+   &:nth-of-type(2) > .restaurant__image{
+    background-image: url("./../../images/restaurants2/stil-u2Lp8tXIcjw-unsplash.jpg");
+   }
+  &:nth-of-type(3) > .restaurant__image{
+    background-image: url("./../../images/restaurants2/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+   }
+  &:nth-of-type(4) > .restaurant__image{
+    background-image: url("./../../images/restaurants2/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+   }
+}
+
+footer{
+  padding: 40px;
 }

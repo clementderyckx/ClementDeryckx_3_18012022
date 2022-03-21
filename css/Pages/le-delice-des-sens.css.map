@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["le-delice-des-sens.scss"],"names":[],"mappings":"AAAA;EACE","file":"le-delice-des-sens.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACd,UAAU,EAAC,qFAAqF,CAAC,GAAG,CAAC,SAAW,CAAC,SAAS;CAC3H",
+    "sources": [
+        "le-delice-des-sens.scss"
+    ],
+    "names": [],
+    "file": "le-delice-des-sens.css"
+}

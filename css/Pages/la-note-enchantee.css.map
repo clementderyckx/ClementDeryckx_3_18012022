@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["la-note-enchantee.scss"],"names":[],"mappings":"AAAA;EACE","file":"la-note-enchantee.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACd,UAAU,EAAC,gEAAgE,CAAC,YAAc,CAAC,SAAS;CACrG",
+    "sources": [
+        "la-note-enchantee.scss"
+    ],
+    "names": [],
+    "file": "la-note-enchantee.css"
+}

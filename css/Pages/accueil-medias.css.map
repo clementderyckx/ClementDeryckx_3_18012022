@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"accueil-medias.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "accueil-medias.scss"
+    ],
+    "names": [],
+    "file": "accueil-medias.css"
+}
