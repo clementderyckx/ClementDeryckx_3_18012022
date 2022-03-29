@@ -2,3 +2,7 @@
 .vscode/
 .DS_Store
 icons.html
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

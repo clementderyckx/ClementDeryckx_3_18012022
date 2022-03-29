@@ -6,7 +6,6 @@
   background-color: darken(#FFF, 10%);
 
   @include headerLocationMedias();  
-
 }
 
 .location__infos{
@@ -16,7 +15,6 @@
   }
   p{
     padding: 10px;
-    
   }
 }
 
@@ -65,8 +63,6 @@
   @include catchPhraseMedias();
 
 }
-
-
 
 
 // Fonctionnement
