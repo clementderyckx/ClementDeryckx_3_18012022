@@ -89,7 +89,7 @@
 }
 
 @mixin ctaMedias(){
-    @media screen and(min-width:563px) {
+      @media screen and(min-width:563px) {
         padding: 20px 10px ;
         border-radius: 35px;
       }
@@ -175,13 +175,14 @@
 }
 
 @mixin headerLogoMedias(){
+
     @media screen and(min-width:768px) {
         height: 100%;
-        background-color: transparent;
-        box-shadow: none;
+        background-color: #FFFFFF;
         justify-content: flex-start;
         padding: 0 25px;
-      }
+      box-shadow: none;
+    }
 }
 
 @mixin headerMedias() {

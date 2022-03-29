@@ -64,6 +64,7 @@
 @keyframes fade-out{
   0%{
     opacity: 100%;
+    z-index: 1000;
   }
   85%{
     opacity: 100%;
@@ -85,6 +86,7 @@
   }
   100%{
     opacity: 0%;
+    z-index: 1000;
   }
 
 }
